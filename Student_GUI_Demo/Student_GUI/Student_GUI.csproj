@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6DB620BF-D248-4D68-B00E-66D7E91BC8C7}</ProjectGuid>
+    <ProjectGuid>{57BF7439-5AF3-4DDC-ACC3-1BB53D526B17}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>HelloGUI_VL</RootNamespace>
-    <AssemblyName>HelloGUI_VL</AssemblyName>
+    <RootNamespace>Student_GUI</RootNamespace>
+    <AssemblyName>Student_GUI</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

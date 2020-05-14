@@ -5,10 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HelloGUI_VL"
         mc:Ignorable="d"
-        Title="MainWindow" Height="324" Width="464">
-    <Grid Margin="0,0,19,17">
-        <Label x:Name="lab_helloLabel" Content="HelloGUI" HorizontalAlignment="Left" Margin="45,30,0,185" Width="217" FontSize="20"/>
-        <Button Content="Exit" Margin="0,0,21,27" Height="63" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="125" Click="Button_Click"/>
+        Title="Kais_Hauptfenster" Height="350" Width="500" MinWidth="400" MinHeight="200">
+    <Grid>
+        <Label x:Name="lab_helloLabel" Content="HelloGUI" HorizontalAlignment="Left" Margin="162,21,0,0" Width="157" FontSize="20" Height="40" VerticalAlignment="Top"/>
+        <Button Content="Exit" Margin="0,0,21,27" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="125" Click="Button_Click" MouseEnter="Button_MouseEnter"/>
+        <Button x:Name="btn_MachWas" Content="Mach Was!" Margin="0,0,151,27" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="125" Click="btn_MachWas_Click"/>
+        <TreeView HorizontalAlignment="Left" Height="236" Margin="10,21,0,0" VerticalAlignment="Top" Width="147">
+            <TreeViewItem Header="Student" IsExpanded="True" >
+                <TreeViewItem Header="MB" HorizontalAlignment="Left" Selected="tvi_MB_Selected" />
+                <TreeViewItem Header="Meer" HorizontalAlignment="Left" Selected="tvi_Meer_Selected" />
+                <TreeViewItem Header="Med" HorizontalAlignment="Left" />
+            </TreeViewItem>
+            <TreeViewItem Header="Dozent" IsExpanded="True" >
+                <TreeViewItem Header="MB" HorizontalAlignment="Left" />
+                <TreeViewItem Header="Meer" HorizontalAlignment="Left" />
+            </TreeViewItem>
+        </TreeView>
+        <Grid x:Name="gird_MB" HorizontalAlignment="Left" Height="146" Margin="162,111,0,0" VerticalAlignment="Top" Width="309">
+            <TextBox x:Name="tb_Summand" Height="23" Margin="0,10,10,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" HorizontalAlignment="Right" Width="172"/>
+            <Label x:Name="lab_Summand" Content="Summand" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="96"/>
+            <ComboBox HorizontalAlignment="Right" Height="23" Margin="0,38,10,0" VerticalAlignment="Top" Width="172" Grid.RowSpan="2" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem x:Name="cbi_leder" Content="Leder" HorizontalAlignment="Left" Width="170" Selected="cbi_leder_Selected"/>
+                <ComboBoxItem x:Name="cbi_kunststoff" Content="Kunststoff" HorizontalAlignment="Left" Width="170" Selected="cbi_kunststoff_Selected"/>
+            </ComboBox>
+        </Grid>
+        <Grid x:Name="gird_Meer" HorizontalAlignment="Left" Height="146" Margin="162,61,0,0" VerticalAlignment="Top" Width="309" Visibility="Hidden">
+            <TextBox x:Name="tb_Summand1" Height="23" Margin="0,10,10,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" HorizontalAlignment="Right" Width="172"/>
+            <Label x:Name="lab_Summand1" Content="Summand" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Width="96"/>
+            <ComboBox HorizontalAlignment="Right" Height="23" Margin="0,38,10,0" VerticalAlignment="Top" Width="172" Grid.RowSpan="2" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem x:Name="cbi_leder1" Content="Leder" HorizontalAlignment="Left" Width="170" Selected="cbi_leder_Selected"/>
+                <ComboBoxItem x:Name="cbi_kunststoff1" Content="Kunststoff" HorizontalAlignment="Left" Width="170" Selected="cbi_kunststoff_Selected"/>
+            </ComboBox>
+        </Grid>
+        <Image HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+        <Image Height="69" Margin="0,21,21,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="147" Source="jadehs-logo.png"/>
 
     </Grid>
 </Window>
