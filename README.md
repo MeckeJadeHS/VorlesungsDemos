@@ -2,6 +2,9 @@
 
 Sie haben/werden in der Vorlesung verschiedene Beispiele und Demos gesehen. Diese sind in diesem Repository zusammengefasst.
 
+VL3:
+SummenDemo
+
 VL5:
 FunktionenDemo
 MessageboxDemo
