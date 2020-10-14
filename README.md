@@ -5,8 +5,11 @@ Sie haben/werden in der Vorlesung verschiedene Beispiele und Demos gesehen. Dies
 VL3:
 SummenDemo
 
-VL5:
+VL4: 
 FunktionenDemo
+DatentypenDemo
+
+VL5:
 MessageboxDemo
 MotorDemo
 
