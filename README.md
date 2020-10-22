@@ -10,6 +10,7 @@ FunktionenDemo
 DatentypenDemo
 
 VL5:
+SummandenDemo
 MessageboxDemo
 MotorDemo
 
