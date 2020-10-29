@@ -8,14 +8,19 @@ namespace SchleifenDemo
 {
     class Program
     {
-        static Boolean debugging = true;
+        static Boolean debugging = false;
 
-        static int Sum_A_while(int m)
+        /// <summary>
+        /// Implementerung der Summe der natürlichen Zahlen bis N durch eine while Schleife
+        /// </summary>
+        /// <param name="n">die natürliche Zahl, bis zu welcher die Summe gebildet werden soll</param>
+        /// <returns></returns>
+        static int Sum_A_while(int n)
         {
             int res = 0;
             int ii = 0;
 
-            while (ii <= m)
+            while (ii <= n)
             {
                 // res = res + ii;
                 res += ii;
@@ -28,11 +33,16 @@ namespace SchleifenDemo
             return res;
         }
 
-        static int Sum_C_for(int m)
+        /// <summary>
+        /// Implementerung der Summe der natürlichen Zahlen bis N durch eine for Schleife
+        /// </summary>
+        /// <param name="n">die natürliche Zahl, bis zu welcher die Summe gebildet werden soll</param>
+        /// <returns></returns>
+        static int Sum_C_for(int n)
         {
             int res = 0;
 
-            for (int ii = 0; ii <= m; ii++)
+            for (int ii = 0; ii <= n; ii++)
             {
                 res += ii;
                 if (debugging) Console.WriteLine("> " + res + " + " + (ii +1));
@@ -41,6 +51,11 @@ namespace SchleifenDemo
             return res;
         }
 
+        /// <summary>
+        /// Implementerung der Summe der natürlichen Zahlen bis N durch eine while Schleife - eine weitere Variante
+        /// </summary>
+        /// <param name="n">die natürliche Zahl, bis zu welcher die Summe gebildet werden soll</param>
+        /// <returns></returns>
         static int Sum_B_while2(int m)
         {
             int res = 0;
@@ -55,6 +70,11 @@ namespace SchleifenDemo
             return res;
         }
 
+        /// <summary>
+        /// Implementerung der Summe der natürlichen Zahlen bis N durch eine Rekursion
+        /// </summary>
+        /// <param name="n">die natürliche Zahl, bis zu welcher die Summe gebildet werden soll</param>
+        /// <returns></returns>
         static int Sum_D_rek(int m)
         {
             int res = 0;
@@ -69,6 +89,11 @@ namespace SchleifenDemo
             return res;
         }
 
+        /// <summary>
+        /// Implementerung der Summe der natürlichen Zahlen bis N durch eine do-while Schleife
+        /// </summary>
+        /// <param name="n">die natürliche Zahl, bis zu welcher die Summe gebildet werden soll</param>
+        /// <returns></returns>
         static int Sum_E_doWhile(int m)
         {
             int res = 0;
@@ -146,15 +171,15 @@ namespace SchleifenDemo
         {
             // Eingabe 
             Console.Write("Eingabe N: ");
-            int n = Convert.ToInt32(Console.ReadLine());
+            int zahl_n = Convert.ToInt32(Console.ReadLine());
 
 
             // Ausgabe
-            Console.WriteLine("Ergebnis A: " + Sum_A_while(n) );
-            Console.WriteLine("Ergebnis B: " + Sum_B_while2(n) );
-            Console.WriteLine("Ergebnis C: " + Sum_C_for(n) );
-            Console.WriteLine("Ergebnis D: " + Sum_D_rek(n));
-            Console.WriteLine("Ergebnis E: " + Sum_E_doWhile(n) );
+            Console.WriteLine("Ergebnis A: " + Sum_A_while(zahl_n) );
+            Console.WriteLine("Ergebnis B: " + Sum_B_while2(zahl_n) );
+            Console.WriteLine("Ergebnis C: " + Sum_C_for(zahl_n) );
+            Console.WriteLine("Ergebnis D: " + Sum_D_rek(zahl_n));
+            Console.WriteLine("Ergebnis E: " + Sum_E_doWhile(zahl_n) );
 
             Console.ReadKey();
         }

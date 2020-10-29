@@ -14,7 +14,7 @@ SummandenDemo
 MessageboxDemo
 MotorDemo
 
-VL7: 
+VL6: 
 SchleifenDemo
 
 VL9: 
