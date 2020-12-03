@@ -6,45 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using FormDemo;
 
-namespace ReferenzDatentypen
+namespace CollectionsDemo
 {
-    class DatenTypenDemo
+    class CollectionControl
     {
-		DatenTypenDemo()
-		{
-			// Variablen initialisieren
-			int zahl = 1;
-			int[] zahlArray = new int[] { 1 };
-
-			// Addiere 10 
-			addiere10zuInt(zahl);
-			addiere10zuIntArray(zahlArray);
-
-			Console.WriteLine(zahl);
-			Console.WriteLine(zahlArray[0]);
-			Console.ReadKey();
-
-            CollectionsFingeruebungen();
-
-            // getGesamtflaecheDerFormen();
-            Console.ReadKey();
-        }
-
-
-        private static void addiere10zuIntArray(int[] zahlArray)
+        CollectionControl()
         {
-                zahlArray[0] += 10; 
-        }
-
-        private static void addiere10zuInt(int zahl)
-        {
-            zahl += 10;
-        }
-
-        #region Bastelei mit Collections
-        public void CollectionsFingeruebungen()
-        {
-
             /// Array mit for
             int[] intArray;
             intArray = new int[5];
@@ -84,12 +51,11 @@ namespace ReferenzDatentypen
             {
                 Console.WriteLine("Liste: " + zahl);
             }
-
-
             // Ausgabe :
             // Liste: 7
             // Liste: 3
             // Liste: 1
+            Console.WriteLine("______________________________________");
 
             /// System.Collections.Queue
             Queue q = new Queue();
@@ -114,6 +80,7 @@ namespace ReferenzDatentypen
             // Ausgabe :
             // Stack: C
             // Stack: B
+            Console.WriteLine("______________________________________");
 
             /// System.Collections.Generic.SortedDictionary
             SortedDictionary<String, String> sortDict =
@@ -160,17 +127,26 @@ namespace ReferenzDatentypen
             // Suche im SortedDict: PLM - Product Lifecycle Management
             // Suche im SortedDict: C - Carl Chamäleon
             // Suche im SortedDict: Three Letter Acronym
+            Console.WriteLine("______________________________________");
 
-            List<String> collection = new List<string>();
+//            List<String> collection = new List<string>();
+//
+//            foreach (var item in collection)
+//            {
+//                // Anweisung für einzelne items
+//            }
 
-            foreach (var item in collection)
-            {
-                // Anweisung für einzelne items
-            }
+            // Verschiedene Formen in einer Liste
+            Console.WriteLine("");
+            Console.WriteLine("Gesamtfläche : " + getGesamtflaecheDerFormen());
+            Console.WriteLine("______________________________________");
+            Console.WriteLine("Beenden mit einer Taste...");
+            Console.ReadKey();
+
 
         }
 
-        public  double getGesamtflaecheDerFormen()
+        public double getGesamtflaecheDerFormen()
         {
             double gesamtsumme = 0;     // Rückgabewert Gesamtfläche
             double a = 10;              // Seitenlaenge oder Radius...
@@ -189,13 +165,10 @@ namespace ReferenzDatentypen
             return gesamtsumme; // Rückgabe
         }
 
-        #endregion
-
         static void Main(string[] args)
-		{
-			DatenTypenDemo demo = new DatenTypenDemo();
-		}
-
-
-	}
+        {
+            new CollectionControl();
+            Console.ReadKey();
+        }
+    }
 }
