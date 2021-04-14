@@ -12,10 +12,12 @@ DatentypenDemo
 VL5:
 SummandenDemo
 MessageboxDemo
-MotorDemo
 
 VL6: 
 SchleifenDemo
+
+VL7:
+MotorDemo
 
 VL9: 
 KreisDemo
