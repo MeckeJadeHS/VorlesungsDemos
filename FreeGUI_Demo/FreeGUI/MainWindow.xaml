@@ -1,0 +1,44 @@
+﻿<Window x:Class="FreeGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FreeGUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="516.807" Width="976.47" MinHeight="300" MinWidth="500">
+    <Grid>
+        <Label Content="Navigation" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="163"/>
+        <TabControl Margin="159,110,10,53">
+            <TabItem Header="Eingabe">
+                <Grid Background="#FFE5E5E5">
+                    <Label Content="Artikelnumnmer" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="133"/>
+                    <TextBox x:Name="tb_ArtNr" Height="23" Margin="221,10,10,0" TextWrapping="NoWrap" Text="TextBox" VerticalAlignment="Top" TextAlignment="Right" LostFocus="tb_ArtNr_LostFocus"/>
+                    <Expander Header="Expander" HorizontalAlignment="Left" Height="97" Margin="10,41,0,0" VerticalAlignment="Top" Width="773">
+                        <Grid Background="#FFE5E5E5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="5*"/>
+                                <ColumnDefinition Width="252*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Content="Label" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="204"/>
+                        </Grid>
+                    </Expander>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Ausgabe">
+                <Grid Background="#FFE5E5E5">
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button x:Name="btn_Berechnung" Content="Berechnen" Margin="0,0,183,10" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="168" Click="btn_Berechnung_Click"/>
+        <Button x:Name="btn_Exit" Content="Exit" HorizontalAlignment="Right" Height="23" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="168" Click="btn_Exit_Click"/>
+        <Image Height="95" Margin="0,10,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="190" Source="jadehs-logo.png"/>
+        <TreeView HorizontalAlignment="Left" Margin="10,41,0,53" Width="144">
+            <TreeViewItem Header="Baugruppe 1">
+                <TreeViewItem x:Name="tvi_SubBG" Header="Sub BG 1" Selected="tvi_SubBG_Selected"/>
+            </TreeViewItem>
+            <TreeViewItem Header="Baugruppe 2"/>
+            <TreeViewItem Header="Baugruppe 3"/>
+            <TreeViewItem Header="Baugruppe 4"/>
+        </TreeView>
+    </Grid>
+</Window>

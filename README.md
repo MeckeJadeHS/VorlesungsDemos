@@ -18,15 +18,16 @@ SchleifenDemo
 
 VL7:
 MotorDemo
-
-VL9: 
 KreisDemo
 
-VL10:
-FormDemo
+VL8: 
 KreisDemo
 HelloGUI_Demo
 Student_GUI_Demo
+FreeGUI_Demo
+
+VL10:
+FormDemo
 
 VL11:
 ReferenzDatentypDemo
