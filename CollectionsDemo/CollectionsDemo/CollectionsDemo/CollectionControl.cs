@@ -23,9 +23,9 @@ namespace CollectionsDemo
             // Alles in einer Zeile
             int[] intArray2 = new int[] { 7, 3, 1, 2, 6 };
 
-            foreach (int kk in intArray)
+            foreach (int myInt in intArray)
             {
-                Console.WriteLine("Array: " + kk);
+                Console.WriteLine("Array: " + myInt);
             }
 
             for (int ii = 0; ii < intArray.Length; ii++)
@@ -58,25 +58,25 @@ namespace CollectionsDemo
             Console.WriteLine("______________________________________");
 
             /// System.Collections.Queue
-            Queue q = new Queue();
-            q.Enqueue("A");
-            q.Enqueue("B");
-            q.Enqueue("C");
+            Queue myQueue = new Queue();
+            myQueue.Enqueue("A");
+            myQueue.Enqueue("B");
+            myQueue.Enqueue("C");
 
-            Console.WriteLine("Queue: " + q.Dequeue());
-            Console.WriteLine("Queue: " + q.Dequeue());
+            Console.WriteLine("Queue: " + myQueue.Dequeue());
+            Console.WriteLine("Queue: " + myQueue.Dequeue());
             // Ausgabe :
             // Queue: A
             // Queue: B
 
             /// System.Collections.Stack
-            Stack s = new Stack();
-            s.Push("A");
-            s.Push("B");
-            s.Push("C");
+            Stack myStack = new Stack();
+            myStack.Push("A");
+            myStack.Push("B");
+            myStack.Push("C");
 
-            Console.WriteLine("Stack: " + s.Pop());
-            Console.WriteLine("Stack: " + s.Pop());
+            Console.WriteLine("Stack: " + myStack.Pop());
+            Console.WriteLine("Stack: " + myStack.Pop());
             // Ausgabe :
             // Stack: C
             // Stack: B
