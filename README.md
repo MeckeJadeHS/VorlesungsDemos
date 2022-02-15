@@ -1,3 +1,6 @@
+Neue Location:
+https://gitlab.gwdg.de/mecke/hsp_vorlesungsdemos
+
 # VorlesungsDemos zur HSP / Mecke
 
 Sie haben/werden in der Vorlesung verschiedene Beispiele und Demos gesehen. Diese sind in diesem Repository zusammengefasst.
